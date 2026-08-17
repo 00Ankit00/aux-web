@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the aux — rainy night r&amp;b</title>
+<meta name="description" content="A rainy, late-night listening room — a rotating chill r&b and mellow indie radio featuring The Weeknd, Chase Atlantic, The Neighbourhood, Arctic Monkeys, Tame Impala, and more.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video class="bg-video" autoplay muted loop playsinline preload="auto">
+  <source src="assets/rainy_background.mp4" type="video/mp4">
+</video>
+<div class="bg-overlay"></div>
+<div class="bg-grain"></div>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand glass">
+      <span class="brand-dot"></span>
+      <span class="brand-name">the aux</span>
+    </div>
+
+    <div class="status-cluster">
+      <div class="pills-row">
+        <div class="glass pill weather-pill" id="weatherPill">
+          <span class="pill-icon" id="weatherIcon">☁︎</span>
+          <span class="pill-text">
+            <span id="weatherTemp">--°</span>
+            <span class="pill-sub" id="weatherLocation">locating…</span>
+          </span>
+        </div>
+        <div class="glass pill clock-pill">
+          <span class="pill-icon">◷</span>
+          <span class="pill-text">
+            <span id="clockTime">--:--</span>
+            <span class="pill-sub" id="clockDate">—</span>
+          </span>
+        </div>
+      </div>
+
+      <aside class="glass upnext-panel">
+        <p class="upnext-heading" id="upnextHeading">Up next</p>
+        <ol class="upnext-list" id="upnextList"></ol>
+      </aside>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="glass hero-card">
+      <p class="eyebrow" id="daypartLabel">LATE NIGHT · CHILL SET</p>
+      <h1 class="headline" id="greetingHeadline">rain on the window, r&amp;b in the room.</h1>
+      <p class="subline" id="greetingSub">Soft static, wet streets, and a playlist that doesn't ask questions.</p>
+    </div>
+  </main>
+
+  <footer class="dock">
+    <div class="stereo-unit">
+      <div class="stereo-top">
+        <span class="stereo-led" id="stereoLed"></span>
+        <span class="stereo-label">AUX IN</span>
+        <span class="stereo-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      </div>
+
+      <div class="stereo-screen">
+        <img class="track-art" id="trackArt" src="" alt="">
+        <div class="screen-scanlines" aria-hidden="true"></div>
+        <div class="screen-glare" aria-hidden="true"></div>
+        <div class="screen-progress" aria-hidden="true"><div class="screen-progress-fill" id="progressFill"></div></div>
+      </div>
+
+      <div class="stereo-bottom">
+        <span class="knob" aria-hidden="true"></span>
+        <span class="stereo-caption" id="stereoCaption">NOW PLAYING</span>
+        <button class="knob knob-live" id="volumeKnob" type="button" title="Volume" aria-label="Cycle volume"></button>
+      </div>
+    </div>
+
+    <div class="glass player-card">
+      <button class="sound-toggle" id="soundToggle" title="Tap for sound">
+        <span id="soundIcon">🔇</span>
+        <span id="soundLabel">tap for sound</span>
+      </button>
+
+      <div class="player-body">
+        <div class="player-info">
+          <p class="track-artist" id="trackArtist">The Weeknd</p>
+          <h2 class="track-title" id="trackTitle">Wicked Games</h2>
+          <p class="track-desc" id="trackDesc">Hazy falsetto, midnight streets, that slow-burn ache.</p>
+        </div>
+
+        <div class="player-controls">
+          <button class="ctrl-btn" id="prevBtn" title="Previous">⏮</button>
+          <button class="ctrl-btn ctrl-play" id="playBtn" title="Play/Pause">⏸</button>
+          <button class="ctrl-btn" id="nextBtn" title="Next">⏭</button>
+        </div>
+      </div>
+
+      <a class="yt-link" id="ytLink" href="#" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </footer>
+
+</div>
+
+<div id="ytPlayer" class="yt-embed" aria-hidden="true"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script>
+</body>
+</html>
