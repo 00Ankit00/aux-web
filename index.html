@@ -88,6 +88,11 @@
         <span id="soundLabel">tap for sound</span>
       </button>
 
+      <button class="sound-toggle" id="rainToggle" title="Toggle rain ambience">
+        <span id="rainIcon">🌂</span>
+        <span id="rainLabel">rain sound</span>
+      </button>
+
       <div class="player-body">
         <div class="player-info">
           <p class="track-artist" id="trackArtist">The Weeknd</p>
@@ -109,6 +114,7 @@
 </div>
 
 <div id="ytPlayer" class="yt-embed" aria-hidden="true"></div>
+<audio id="rainAudio" src="assets/rain_sound.mp3" loop preload="auto"></audio>
 
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="script.js"></script>

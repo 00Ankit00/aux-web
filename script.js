@@ -463,6 +463,42 @@ soundToggle.addEventListener('click', () => {
   }
 });
 
+/* ---------------- rain ambience ---------------- */
+
+const rainAudio = document.getElementById('rainAudio');
+const rainToggle = document.getElementById('rainToggle');
+const rainIcon = document.getElementById('rainIcon');
+const rainLabel = document.getElementById('rainLabel');
+
+rainAudio.volume = 0.35;
+let rainOn = false;
+
+rainToggle.addEventListener('click', () => {
+  if (rainOn) {
+    rainOn = false;
+    rainAudio.pause();
+    rainIcon.textContent = '\u{1F302}';
+    rainLabel.textContent = 'rain sound';
+    rainToggle.classList.remove('on');
+    return;
+  }
+  rainAudio.play()
+    .then(() => {
+      rainOn = true;
+      rainIcon.textContent = '\u{1F327}\u{FE0F}';
+      rainLabel.textContent = 'rain on';
+      rainToggle.classList.add('on');
+    })
+    .catch((err) => {
+      console.warn('Rain ambience could not start:', err);
+    });
+});
+
+// resume the loop if the OS/browser ever pauses background audio (e.g. a call)
+rainAudio.addEventListener('pause', () => {
+  if (rainOn) rainAudio.play().catch(() => {});
+});
+
 /* ---------------- volume knob ---------------- */
 
 const VOLUME_STEPS = [25, 50, 75, 100];
