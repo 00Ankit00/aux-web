@@ -629,7 +629,9 @@ body {
   .dock { flex-direction: column; align-items: stretch; }
   .stereo-unit { width: 100%; }
   .player-card { flex-direction: column; align-items: stretch; }
+  .sound-toggle { align-self: flex-start; padding: 11px 16px; font-size: 0.78rem; }
   .player-body { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .player-controls { align-self: center; }
   .yt-link { border-left: none; padding-left: 0; border-top: 1px solid var(--glass-border); padding-top: 10px; width: 100%; }
   .track-title, .track-desc { white-space: normal; }
 }
