@@ -22,30 +22,37 @@
 <div class="app">
 
   <header class="topbar">
-    <div class="brand glass">
+    <div class="brand">
       <span class="brand-dot"></span>
       <span class="brand-name">the aux</span>
     </div>
 
     <div class="status-cluster">
       <div class="pills-row">
-        <div class="glass pill weather-pill" id="weatherPill">
+        <div class="pill weather-pill" id="weatherPill">
           <span class="pill-icon" id="weatherIcon">☁︎</span>
           <span class="pill-text">
             <span id="weatherTemp">--°</span>
             <span class="pill-sub" id="weatherLocation">locating…</span>
           </span>
         </div>
-        <div class="glass pill clock-pill">
+        <div class="pill clock-pill">
           <span class="pill-icon">◷</span>
           <span class="pill-text">
             <span id="clockTime">--:--</span>
             <span class="pill-sub" id="clockDate">—</span>
           </span>
         </div>
+        <div class="pill listener-pill" id="listenerPill">
+          <span class="pill-icon">🎧</span>
+          <span class="pill-text">
+            <span id="listenerCount">--</span>
+            <span class="pill-sub">listening</span>
+          </span>
+        </div>
       </div>
 
-      <aside class="glass upnext-panel">
+      <aside class="upnext-panel">
         <p class="upnext-heading" id="upnextHeading">Up next</p>
         <ol class="upnext-list" id="upnextList"></ol>
       </aside>
@@ -53,7 +60,7 @@
   </header>
 
   <main class="hero">
-    <div class="glass hero-card">
+    <div class="hero-card">
       <p class="eyebrow" id="daypartLabel">LATE NIGHT · CHILL SET</p>
       <h1 class="headline" id="greetingHeadline">rain on the window, r&amp;b in the room.</h1>
       <p class="subline" id="greetingSub">Soft static, wet streets, and a playlist that doesn't ask questions.</p>
@@ -82,7 +89,7 @@
       </div>
     </div>
 
-    <div class="glass player-card">
+    <div class="player-card">
       <button class="sound-toggle" id="soundToggle" title="Tap for sound">
         <span id="soundIcon">🔇</span>
         <span id="soundLabel">tap for sound</span>
@@ -115,6 +122,37 @@
 
 <div id="ytPlayer" class="yt-embed" aria-hidden="true"></div>
 <audio id="rainAudio" src="assets/rain_sound.mp3" loop preload="auto"></audio>
+
+<div class="join-overlay hidden" id="joinOverlay">
+  <div class="join-card">
+    <p class="join-eyebrow">JOIN THE ROOM</p>
+    <h2 class="join-title">who's tuning in?</h2>
+    <input type="text" id="joinNameInput" class="join-input" placeholder="your name" maxlength="24" autocomplete="off">
+    <div class="join-actions">
+      <button class="join-btn" id="joinBtn" type="button">Join &amp; chat</button>
+      <button class="join-skip" id="joinSkipBtn" type="button">Just listen</button>
+    </div>
+  </div>
+</div>
+
+<button class="chat-fab" id="chatFab" type="button" title="Open chat" aria-label="Open chat">💬</button>
+
+<div class="chat-panel" id="chatPanel" aria-hidden="true">
+  <div class="chat-header">
+    <span>Room chat</span>
+    <button class="chat-close" id="chatCloseBtn" type="button" aria-label="Close chat">✕</button>
+  </div>
+  <ul class="chat-messages" id="chatMessages"></ul>
+  <form class="chat-input-row" id="chatForm">
+    <input type="text" id="chatInput" class="chat-input" placeholder="say something…" maxlength="240" autocomplete="off">
+    <button type="submit" class="chat-send" id="chatSendBtn">Send</button>
+  </form>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-database-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="chat.js"></script>
 
 <script src="https://www.youtube.com/iframe_api"></script>
 <script src="script.js"></script>

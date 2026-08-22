@@ -215,6 +215,8 @@ const TRACKS = [
   { videoId: 'jwK7-u_0VWk', artist: 'The Neighbourhood', title: 'Female Robbery', desc: 'something stolen quietly, without anyone noticing it was gone.' },
   { videoId: 'j56dEcq7ryo', artist: 'The Neighbourhood', title: 'Compass', desc: 'no direction home, just a low hum guiding you nowhere in particular.' },
   { videoId: 'L0OORjXAtxg', artist: 'The Neighbourhood', title: 'How', desc: 'a question left hanging in the air long after the door shuts.' },
+  { videoId: 'x47TgeRJtH0', artist: 'The Neighbourhood', title: 'Reflections', desc: 'a mirror fogged with something you\'re not ready to name.' },
+  { videoId: '9PqbCv3F_8c', artist: 'The Neighbourhood', title: 'Leather Weather', desc: 'restless and searching under a sky that won\'t clear up.' },
   { videoId: 'pK7egZaT3hs', artist: 'Arctic Monkeys', title: 'I Bet You Look Good on the Dancefloor', desc: 'sweat and static under cheap club lights that never quite go dark.' },
   { videoId: 'EqkBRVukQmE', artist: 'Arctic Monkeys', title: 'When the Sun Goes Down', desc: 'streetlamps flicker on over a town that keeps its secrets close.' },
   { videoId: 'ma9I9VBKPiw', artist: 'Arctic Monkeys', title: 'Fluorescent Adolescent', desc: 'faded photographs of a summer that got away too fast.' },
@@ -245,11 +247,18 @@ const TRACKS = [
   { videoId: 'qLGwIHjhboA', artist: 'Tame Impala', title: 'Is It True', desc: 'a question circling back on itself under a haze of reverb.' },
   { videoId: 'UTwlmgV3pEI', artist: 'Tame Impala', title: 'Breathe Deeper', desc: 'a long exhale stretched out until the room stops spinning.' },
   { videoId: 'bMLq3QQK6a8', artist: 'Tame Impala', title: 'One More Year', desc: 'watching the clock loop back on itself, same room, same static.' },
+  { videoId: 's3a4OQR-10M', artist: 'Tame Impala', title: 'Loser', desc: 'a woozy, half-here confession set adrift in reverb.' },
   {
     videoId: 'd7cVLE4SaN0',
     artist: 'Bryson Tiller',
     title: "Don't",
     desc: 'Trap-soul slow burn, low light and lower guard.',
+  },
+  {
+    videoId: 'iOpJywrdCuQ',
+    artist: 'Bryson Tiller',
+    title: 'Exchange',
+    desc: 'A quiet, unresolved trade of feelings neither side will say out loud.',
   },
   {
     videoId: 'uWRlisQu4fo',
@@ -258,10 +267,22 @@ const TRACKS = [
     desc: 'Baritone ache over a stripped-back, rainy-day groove.',
   },
   {
+    videoId: 'uCPjdfCUowg',
+    artist: 'Giveon',
+    title: 'Like I Want You',
+    desc: 'A slow-burning plea, all velvet baritone and second thoughts.',
+  },
+  {
     videoId: 'uQFVqltOXRg',
     artist: 'Daniel Caesar',
     title: 'Get You (feat. Kali Uchis)',
     desc: 'Warm, gospel-tinged r&b built for slow mornings.',
+  },
+  {
+    videoId: 'vBy7FaapGRo',
+    artist: 'Daniel Caesar',
+    title: 'Best Part (feat. H.E.R.)',
+    desc: 'Soft acoustic devotion for the one bright spot in the week.',
   },
   {
     videoId: 'fS9m0Ac8PCU',
@@ -276,10 +297,22 @@ const TRACKS = [
     desc: 'Nostalgic, guitar-laced, half-remembered summer.',
   },
   {
+    videoId: 'BME88lS6aVY',
+    artist: 'Frank Ocean',
+    title: 'Self Control',
+    desc: 'A quiet unraveling, all falsetto ache and things left unsaid.',
+  },
+  {
     videoId: '4976Fgvf5Ps',
     artist: 'Snoh Aalegra',
     title: 'I Want You Around',
     desc: 'Lush retro-soul with a cinematic, rain-soaked pull.',
+  },
+  {
+    videoId: 'hJrEuqIgKUk',
+    artist: 'Snoh Aalegra',
+    title: 'Nothing Burns Like The Cold',
+    desc: 'Icy, cinematic heartbreak that lingers long after the song ends.',
   },
   {
     videoId: 'gWPHeH0vEp4',
