@@ -12,7 +12,8 @@
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -170,7 +171,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  max-height: 42vh;
+  max-height: min(230px, 32vh);
   overflow-y: auto;
   scrollbar-width: none;
 }
