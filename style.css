@@ -717,15 +717,15 @@ body {
 .chat-fab {
   position: fixed;
   right: clamp(16px, 3vw, 36px);
-  bottom: clamp(16px, 3vw, 36px);
+  bottom: 170px;
   z-index: 45;
-  width: 52px;
-  height: 52px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: none;
   background: var(--accent);
   color: #0c0c10;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -741,7 +741,7 @@ body {
 .chat-panel {
   position: fixed;
   right: clamp(16px, 3vw, 36px);
-  bottom: calc(clamp(16px, 3vw, 36px) + 66px);
+  bottom: 228px;
   z-index: 44;
   width: min(320px, calc(100vw - 32px));
   height: min(420px, calc(100vh - 140px));
@@ -878,7 +878,7 @@ body {
   .player-controls { align-self: center; }
   .yt-link { border-left: none; padding-left: 0; border-top: 1px solid var(--glass-border); padding-top: 10px; width: 100%; }
   .track-title, .track-desc { white-space: normal; }
-  .chat-fab { width: 46px; height: 46px; font-size: 1.1rem; }
-  .chat-panel { width: calc(100vw - 24px); height: min(60vh, 460px); right: 12px; bottom: 74px; }
+  .chat-fab { width: 40px; height: 40px; font-size: 1rem; bottom: 90px; }
+  .chat-panel { width: calc(100vw - 24px); height: min(60vh, 460px); right: 12px; bottom: 144px; }
   .join-card { padding: 24px 20px; }
 }
