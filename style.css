@@ -717,7 +717,7 @@ body {
 .chat-fab {
   position: fixed;
   right: clamp(16px, 3vw, 36px);
-  bottom: 170px;
+  bottom: 125px;
   z-index: 45;
   width: 44px;
   height: 44px;
@@ -741,7 +741,7 @@ body {
 .chat-panel {
   position: fixed;
   right: clamp(16px, 3vw, 36px);
-  bottom: 228px;
+  bottom: 183px;
   z-index: 44;
   width: min(320px, calc(100vw - 32px));
   height: min(420px, calc(100vh - 140px));
